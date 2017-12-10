@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB800E9E-D664-401B-BF5D-5D1CC9EB58A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ASC2016</RootNamespace>
+    <AssemblyName>ASC2016</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User Control\AboutMarathonSkills.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\AboutMarathonSkills.Designer.cs">
+      <DependentUpon>AboutMarathonSkills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\AddanewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\AddanewUser.Designer.cs">
+      <DependentUpon>AddanewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\AddEditCharity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\AddEditCharity.Designer.cs">
+      <DependentUpon>AddEditCharity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\AdministratorMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\AdministratorMenu.Designer.cs">
+      <DependentUpon>AdministratorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\BMICalculator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\BMICalculator.Designer.cs">
+      <DependentUpon>BMICalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\BMRCalculator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\BMRCalculator.Designer.cs">
+      <DependentUpon>BMRCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\CertificatePreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\CertificatePreview.Designer.cs">
+      <DependentUpon>CertificatePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\CheckIfRunnerhasCompetedBefore.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\CheckIfRunnerhasCompetedBefore.Designer.cs">
+      <DependentUpon>CheckIfRunnerhasCompetedBefore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\CoordinatorMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\CoordinatorMenu.Designer.cs">
+      <DependentUpon>CoordinatorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\core.cs" />
+    <Compile Include="User Control\DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\Editauser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\Editauser.Designer.cs">
+      <DependentUpon>Editauser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\EditProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\EditRunnerProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\EditRunnerProfile.Designer.cs">
+      <DependentUpon>EditRunnerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\FindoutmoreInformation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\FindoutmoreInformation.Designer.cs">
+      <DependentUpon>FindoutmoreInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\HowlongisaMarathon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\HowlongisaMarathon.Designer.cs">
+      <DependentUpon>HowlongisaMarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\ImportVolunteers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\ImportVolunteers.Designer.cs">
+      <DependentUpon>ImportVolunteers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\InteractiveMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\InteractiveMap.Designer.cs">
+      <DependentUpon>InteractiveMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\ListofCharities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\ListofCharities.Designer.cs">
+      <DependentUpon>ListofCharities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\LoginForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\ManageaRunner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\ManageaRunner.Designer.cs">
+      <DependentUpon>ManageaRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\ManageCharities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\ManageCharities.Designer.cs">
+      <DependentUpon>ManageCharities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\MyRaceResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\MyRaceResult.Designer.cs">
+      <DependentUpon>MyRaceResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\mySponsorship.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\mySponsorship.Designer.cs">
+      <DependentUpon>mySponsorship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\PreviousRaceResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\PreviousRaceResults.Designer.cs">
+      <DependentUpon>PreviousRaceResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\RegisterForAnEvent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\RegisterForAnEvent.Designer.cs">
+      <DependentUpon>RegisterForAnEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\RegistrationConfirmation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\RegistrationConfirmation.Designer.cs">
+      <DependentUpon>RegistrationConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\RunnerManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\RunnerManagement.Designer.cs">
+      <DependentUpon>RunnerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\RunnerMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\RunnerMenu.Designer.cs">
+      <DependentUpon>RunnerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\RunnerRegistration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\RunnerRegistration.Designer.cs">
+      <DependentUpon>RunnerRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\SponsoraRunner.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\SponsoraRunner.Designer.cs">
+      <DependentUpon>SponsoraRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\SponsorshipConfirmation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\SponsorshipConfirmation.Designer.cs">
+      <DependentUpon>SponsorshipConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\SponsorshipOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\SponsorshipOverview.Designer.cs">
+      <DependentUpon>SponsorshipOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\UserManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\UserManagement.Designer.cs">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Control\VolunteerManagement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Control\VolunteerManagement.Designer.cs">
+      <DependentUpon>VolunteerManagement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="User Control\AboutMarathonSkills.resx">
+      <DependentUpon>AboutMarathonSkills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\AddanewUser.resx">
+      <DependentUpon>AddanewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\AddEditCharity.resx">
+      <DependentUpon>AddEditCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\AdministratorMenu.resx">
+      <DependentUpon>AdministratorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\BMICalculator.resx">
+      <DependentUpon>BMICalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\BMRCalculator.resx">
+      <DependentUpon>BMRCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\CertificatePreview.resx">
+      <DependentUpon>CertificatePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\CheckIfRunnerhasCompetedBefore.resx">
+      <DependentUpon>CheckIfRunnerhasCompetedBefore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\CoordinatorMenu.resx">
+      <DependentUpon>CoordinatorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\Editauser.resx">
+      <DependentUpon>Editauser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\EditRunnerProfile.resx">
+      <DependentUpon>EditRunnerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\FindoutmoreInformation.resx">
+      <DependentUpon>FindoutmoreInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\HowlongisaMarathon.resx">
+      <DependentUpon>HowlongisaMarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\ImportVolunteers.resx">
+      <DependentUpon>ImportVolunteers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\InteractiveMap.resx">
+      <DependentUpon>InteractiveMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\ListofCharities.resx">
+      <DependentUpon>ListofCharities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\ManageaRunner.resx">
+      <DependentUpon>ManageaRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\ManageCharities.resx">
+      <DependentUpon>ManageCharities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\MyRaceResult.resx">
+      <DependentUpon>MyRaceResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\mySponsorship.resx">
+      <DependentUpon>mySponsorship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\PreviousRaceResults.resx">
+      <DependentUpon>PreviousRaceResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\RegisterForAnEvent.resx">
+      <DependentUpon>RegisterForAnEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\RegistrationConfirmation.resx">
+      <DependentUpon>RegistrationConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\RunnerManagement.resx">
+      <DependentUpon>RunnerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\RunnerMenu.resx">
+      <DependentUpon>RunnerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\RunnerRegistration.resx">
+      <DependentUpon>RunnerRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\SponsorshipConfirmation.resx">
+      <DependentUpon>SponsorshipConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\SponsorshipOverview.resx">
+      <DependentUpon>SponsorshipOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\UserManagement.resx">
+      <DependentUpon>UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Control\VolunteerManagement.resx">
+      <DependentUpon>VolunteerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="User Control\DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="User Control\SponsoraRunner.resx">
+      <DependentUpon>SponsoraRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="User Control\DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-marathon-map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-marathon-photos\banco-banespa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-marathon-photos\ibirapuera-park-lake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-marathon-photos\marathon-image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-marathon-photos\teatro-municipal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-interactive-map-data\map-icon-start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-interactive-map-data\map-icon-drinks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-interactive-map-data\map-icon-energy-bars.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-interactive-map-data\map-icon-information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-interactive-map-data\map-icon-medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-interactive-map-data\map-icon-toilets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-status-icons\cross-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-status-icons\tick-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-logos\logo-2015-for-dark-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-logos\logo-2015-full-colour.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-logos\logo-2015-monochrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2014-certificate-seal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2014-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-gender-icons\female-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-gender-icons\male-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-bmi-icons\bmi-healthy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-bmi-icons\bmi-obese-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-bmi-icons\bmi-overweight-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\marathon-skills-2015-bmi-icons\bmi-underweight-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
